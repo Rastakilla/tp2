@@ -31,5 +31,5 @@
 
 en:
   hello: "Hello world"
-  administrate:
+administrate:
     admin_dashboard: 'Dashboard'
