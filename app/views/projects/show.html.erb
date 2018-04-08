@@ -1,0 +1,55 @@
+<div class="alert alert-warning">
+  <p>
+    Voici le projet en question.
+  </p></div>
+<table class="table">
+  <tr>
+    <td>Titre :</td>
+    <td>
+      <%= @project.titre %>
+    </td>
+  </tr>
+  <tr>
+    <td>Description :</td>
+    <td>
+      <%= @project.description %>
+    </td>
+  <tr>
+    <td>Date debut :</td>
+    <td>
+      <%= @project.dateDebut %>
+    </td>
+  </tr>
+  <tr>
+    <td>Date fin :</td>
+    <td>
+      <%= @project.dateFin %>
+    </td>
+  </tr>
+  <tr>
+    <td>Nombre heures par semaine :</td>
+    <td>
+      <%= @project.nbHeuresSemaine %>
+    </td>
+  </tr>
+  <tr>
+    <td>Remuneration :</td>
+    <td>
+      <%= @project.renumeration %>
+    </td>
+  </tr>
+  <tr>
+    <td>Environnement Technologique :</td>
+    <td>
+      <%= @project.environementTechnologique %>
+    </td>
+  </tr>
+  <tr>
+    <td>Coordonnees de la personne a contacter :</td>
+    <td>
+      <%= @project.coodonneeDeLaPersonneAContacter %>
+    </td>
+  </tr>
+</table>
+
+<%= link_to 'Edit', edit_project_path(@project) %> | <%= link_to 'Back', projects_path %>
