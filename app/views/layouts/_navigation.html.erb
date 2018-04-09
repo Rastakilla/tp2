@@ -22,13 +22,10 @@
 </ul>
 
 <% if user_signed_in? %>
-<form class="form-inline mt-2 mt-md-0">
-
-<input class="form-control mr-sm-2" type="text" placeholder="Rechercher" aria-label="Rechercher">
-
-<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
-
-</form>
+  <%= form_tag(projects_path, :method => "get", id: "search-form",class:"form-inline mt-2 mt-md-0") do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Rechercher projets",class:"form-control mr-sm-2" %>
+      <%= submit_tag "Search",class:"btn btn-outline-success my-2 my-sm-0", :name => nil %>
+  <% end %>
 <% end %>
 </div>
 

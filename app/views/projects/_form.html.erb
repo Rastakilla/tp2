@@ -1,12 +1,12 @@
 <%= simple_form_for @project do |f| %>
-  <%= f.input :titre, :hint => 'Le titre du projet' %>
-  <%= f.input :description, :hint => 'La description du projet' %>
-  <%= f.input :dateDebut, :hint => 'La date de debut du projet' %>
-  <%= f.input :dateFin, :hint => 'La date de fin du projet' %>
-  <%= f.input :nbHeuresSemaine, :hint => 'Le nombre d\'heure par semaine' %>
-  <%= f.input :renumeration, :hint => 'Le salaire pour le projet' %>
-  <%= f.input :environementTechnologique, :hint => 'L\'environnement technologique' %>
-  <%= f.input :coodonneeDeLaPersonneAContacter, :hint => 'Les coordonnees de la personne a contacter' %>
+  <%= f.input :titre, :label => 'Le titre du projet' %>
+  <%= f.input :description, :label => 'La description du projet'%>
+  <%= f.input :dateDebut, :label => 'La date de debut du projet' %>
+  <%= f.input :dateFin, :label => 'La date de fin du projet' %>
+  <%= f.input :nbHeuresSemaine, :label => 'Le nombre d\'heure par semaine' %>
+  <%= f.input :renumeration, :label => 'Le salaire pour le projet' %>
+  <%= f.input :environementTechnologique, :label => 'L\'environnement technologique' %>
+  <%= f.input :coodonneeDeLaPersonneAContacter, :label => 'Les coordonnees de la personne a contacter' %>
   <div class="actions">
     <%= f.button :submit, :disable_with => 'Please wait ...' %>
   </div>
