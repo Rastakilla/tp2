@@ -1,5 +1,10 @@
+<% if user_signed_in? %>
 <h1>New project
 </h1>
 <%= render 'form' %>
 
 <%= link_to 'Back', projects_path%>
+<% else %>
+<h1>Veuillez vous connecter pour voir les offres de stages
+</h1>
+<% end %>
